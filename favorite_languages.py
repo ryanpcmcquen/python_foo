@@ -5,6 +5,12 @@ favorite_languages = {
     'phil': 'python',
 }
 
+if 'erin' not in favorite_languages.keys():
+    print("Erin, please take our poll!")
+
+for name in sorted(favorite_languages.keys()):
+    print(name.title() + ", thank you for taking the poll.")
+
 friends = [
     'phil',
     'sarah'
