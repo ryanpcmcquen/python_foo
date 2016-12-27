@@ -5,6 +5,11 @@ favorite_languages = {
     'phil': 'python',
 }
 
+print("The following languages have been mentioned:")
+## Using `set()` removes any duplicates:
+for language in set(favorite_languages.values()):
+    print(language.title())
+
 if 'erin' not in favorite_languages.keys():
     print("Erin, please take our poll!")
 
@@ -25,3 +30,5 @@ for name in favorite_languages:
         print("  Hi " + name.title() +
             ", I see your favorite language is " +
             favorite_languages[name].title() + "!")
+
+
