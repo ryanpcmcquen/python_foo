@@ -10,3 +10,10 @@ usernames = [
     'margot'
 ]
 greet_users(usernames)
+
+## Prints:
+'''
+Hello, Hannah!
+Hello, Ty!
+Hello, Margot!
+'''
