@@ -1,10 +1,15 @@
-def make_pizza (*toppings):
-    '''
-    Summarize the pizza we are about to make.
-    '''
-    print("\nMaking a pizza with the following toppings:")
-    for topping in toppings:
-        print("- " + topping.title())
+## Store information about a pizza being ordered.
+pizza = {
+    'crust': 'thick',
+    'toppings': [
+        'mushrooms',
+        'extra cheese'
+    ],
+}
 
-make_pizza('pineapple')
-make_pizza('mushrooms', 'green peppers', 'extra cheese')
+## Summarize the order.
+print("You ordered a " + pizza['crust'] + "-crust pizza " +
+    "with the following toppings:")
+
+for topping in pizza['toppings']:
+    print("\t" + topping)
